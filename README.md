@@ -1,4 +1,4 @@
-# proyecto_u2_pw_p3_cc
+# proyecto_u2_pw_p3_js
 
 ## Project setup
 ```
