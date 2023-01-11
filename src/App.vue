@@ -1,13 +1,16 @@
 <template>
-  <Pregunta/>
+  
+
+
+  <calculadora/>
 </template>
 
 <script>
-import Pregunta from './components/Pregunta.vue'
+import calculadora from './components/calculadora.vue';
   export default {
     name: 'App',
     components: {
-      Pregunta
+      calculadora
     }
   }
 </script>
