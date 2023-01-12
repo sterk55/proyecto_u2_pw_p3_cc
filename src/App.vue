@@ -1,16 +1,16 @@
 <template>
   
+<PokemonPage/>
 
-
-  <calculadora/>
 </template>
 
 <script>
-import calculadora from './components/calculadora.vue';
-  export default {
+import PokemonPage from './pages/PokemonPage.vue'; 
+
+export default {
     name: 'App',
     components: {
-      calculadora
+      PokemonPage
     }
   }
 </script>
