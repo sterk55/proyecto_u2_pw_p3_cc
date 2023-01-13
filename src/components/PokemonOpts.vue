@@ -16,12 +16,14 @@
 <script>
 export default {
 
+
 }
 </script>
 
 <style>
 ul{
     list-style-type: none;
+    padding-left: 0px;
 }
 li{
     background-color: white;
@@ -32,6 +34,10 @@ li{
     
     cursor: pointer;
 
+}
+
+li:hover{
+  background-color: gray;
 }
 
 

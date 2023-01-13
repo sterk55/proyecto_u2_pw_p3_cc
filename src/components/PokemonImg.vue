@@ -1,8 +1,8 @@
 <template>
     <div>
-  <h1>¿Que Pokemon es?</h1>
-  <img v-if="true" class="ocultar-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/19.svg" alt="No hay">
-  <img v-if="true"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/19.svg" alt="No hay">
+  
+  <img v-if="!showPokemon" class="ocultar-pokemon" :src="imgPokemon" alt="No hay">
+  <img   :src="imgPokemon" alt="No hay">
 </div>
 </template>
 
@@ -10,12 +10,28 @@
 export default {
     data(){
         return{
-            idPokemon:19,
-            mostrarPokemon:false
+            
         };
+    },
+    props:{
+        idPokemon:{
+            type:Number,
+            required:true
+        },
+        showPokemon:{
+            type:Boolean,
+            required:true,
+            default:true
+        }
+    },
+    computed:{
+        imgPokemon(){
+            return  `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${this.idPokemon}.svg`
+        }
     }
 
 }
+
 </script>
 
 <style>
@@ -25,7 +41,7 @@ export default {
     }
     img{
         
-    
+        height: 200px;
         -webkit-user-drag: none;
 
     }
