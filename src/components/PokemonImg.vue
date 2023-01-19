@@ -8,12 +8,16 @@
 
 <script>
 export default {
+    props:{
+        numero: number,
+        mostrar: boolean
+    },
     data(){
         return{
             idPokemon:19,
             mostrarPokemon:false
         };
-    }
+    },
 
 }
 </script>
