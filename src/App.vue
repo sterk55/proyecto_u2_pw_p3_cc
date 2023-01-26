@@ -1,16 +1,17 @@
 <template>
   
-<juego/>
+<Tarea8/>
 
 </template>
 
 <script>
-import juego from './components/juego.vue';
+
+import Tarea8 from './components/Tarea8.vue';
 
 export default {
     name: 'App',
     components: {
-      juego
+      Tarea8
     }
   }
 </script>
