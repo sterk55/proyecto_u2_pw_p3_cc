@@ -38,6 +38,9 @@ export default {
             this.img = image
         }
 
+    },
+    mounted(){
+        console.log("Mi componente se corrio")
     }
 }
 </script>
