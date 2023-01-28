@@ -7,7 +7,7 @@ const obtenerPokemon = async () => {
     const vec = obtenerVectorNumerico()
     const vecNombres= await obtenerVectorNombres(vec)
     console.table(vecNombres)
-   
+    return vecNombres
 }
 
 const obtenerVectorNombres= async ([p1, p2, p3, p4]=[])=>{
@@ -57,7 +57,9 @@ function obtenerAleatorio(min, max){
 }
 
 const obtenerPokemonsFachada=async()=>{
+    console.log("Entra");
     return await obtenerPokemon()
+    
 }
 
 export default obtenerPokemonsFachada
