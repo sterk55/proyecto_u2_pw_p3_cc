@@ -1,17 +1,17 @@
 <template>
   
-<Tarea8/>
+<PokemonPage/>
 
 </template>
 
 <script>
 
-import Tarea8 from './components/Tarea8.vue';
+import PokemonPage from './pages/PokemonPage.vue';
 
 export default {
     name: 'App',
     components: {
-      Tarea8
+      PokemonPage
     }
   }
 </script>
