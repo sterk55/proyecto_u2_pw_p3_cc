@@ -1,17 +1,17 @@
 <template>
   
-<PokemonPage/>
+<estudiante/>
 
 </template>
 
 <script>
 
-import PokemonPage from './pages/PokemonPage.vue';
+import estudiante from './components/estudiante.vue';
 
 export default {
     name: 'App',
     components: {
-      PokemonPage
+      estudiante
     }
   }
 </script>
